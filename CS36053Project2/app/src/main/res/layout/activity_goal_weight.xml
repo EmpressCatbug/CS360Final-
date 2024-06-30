@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/currentGoalWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Goal Weight: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/goalWeightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your goal weight"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_below="@id/currentGoalWeight"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSetGoalWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goalWeightInput"
+        android:layout_marginTop="16dp"
+        android:text="Set Goal"
+        android:textSize="18sp"
+        android:onClick="setGoalWeight" />
+</RelativeLayout>
